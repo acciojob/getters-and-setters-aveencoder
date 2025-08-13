@@ -1,34 +1,32 @@
-// 1. Person Class
-class Person {
-  private _name: string;
-  private _age: number;
 
-  constructor(name: string, age: number) {
+class Person {
+ 
+
+  constructor(name, age) {
     this._name = name;
     this._age = age;
   }
 
   // Getter for name
-  get name(): string {
+  get name() {
     return this._name;
   }
 
   // Setter for age
-  set age(age: number) {
+  set age() {
     this._age = age;
   }
 }
 
-// 2. Student Class (inherits from Person)
+
 class Student extends Person {
-  study(): void {
+  study() {
     console.log(`${this.name} is studying`);
   }
 }
 
-// 3. Teacher Class (inherits from Person)
 class Teacher extends Person {
-  teach(): void {
+  teach() {
     console.log(`${this.name} is teaching`);
   }
 
